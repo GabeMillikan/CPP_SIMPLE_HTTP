@@ -7,7 +7,7 @@ int main()
     Data.Add("Name", "Gabe");
     Data.Add("MoreData", "Another string that needs url encoding {[!@#$%^&*()-=]}");
 
-    std::string ServerResponse = HTTP::POST("httpbin.org", "/anything", Data.String);
+    std::string ServerResponse = HTTP::GET("httpbin.org", "/anything", Data.String);
 
     std::cout << ServerResponse << std::endl;
 
