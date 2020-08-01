@@ -1,6 +1,6 @@
 #include "HTTP.hpp"
 
-// an example program that posts to http://httpbin.org/post with some data
+// an example program that HTTP GETs http://httpbin.org/post with some URL get arguments
 int main()
 {
     HTTP::Arguments Data;
